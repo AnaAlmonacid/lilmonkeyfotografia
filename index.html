@@ -12,3 +12,69 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+<body>
+    <header class="encabezado">
+    <a href="./index.html"><img src="./Imagenes/Icono.png" alt="Logo" id="Logo"></a>
+        <nav>
+            <!--De esta barra de navegación solo "Sobre la sesión" me lleva a otro html-->
+            <ul class="encabezadoBarra">
+                <li><a href="#sobre mi">Sobre mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#Galería">Galería</a></li>
+                <li><a href="Página/Sobre la sesión.html">Sobre la sesión</a></li>
+            </ul>
+        </nav>
+            <img src="./Imagenes/Inicio.jpg" alt="Foto bebe inicio" class="encabezadoFotoPrincipal">
+    </header>
+    <main>
+        <!--Texto de ejemplo-->
+        <article id="sobre mi">
+            <p>George. You wanna a Pepsi, pall, you're gonna pay for it. The way I see it, if you're gonna build a time machine into a car why not do it with some style. Besides, the stainless, steel construction made the flux dispersal- look out. What a nightmare. My god, they found me. I don't know how but they found me. Run for it, Marty. My god, they found me. I don't know how but they found me. Run for it, Marty.</p>
+        </article>
+        <h2 id="Galería">Galerías</h2>
+            <div class="galeríaCircular">
+                <!--Cada una me lleva a una galería diferente según el tipo de sesión-->
+                <a href="Página/Primer año.html"><img src="./Imagenes/PAño.png" alt="Primeraño" class="fotoCircularGaleria FotoPA"></a>
+                <a href="Página/Recién nacidos.html"><img src="./Imagenes/Rn.png" alt="RecienNacidos" class="fotoCircularGaleria FotoRN"></a>
+                <a href="Página/Maternidad.html"><img src="./Imagenes/Maternidad.png" alt="RecienNacidos" class="fotoCircularGaleria FotoM"></a>
+                <a href="Página/Familiares.html"><img src="./Imagenes/Flia.png" alt="RecienNacidos" class="fotoCircularGaleria FotoF"></a>
+            </div>
+    </main>
+    <footer id="contacto">
+        <h2 class="contacto">Contacto</h2>
+        <section>
+        <form action="enviar.php" method="post">
+        <fieldset class="formulario">
+            <br>
+            <input type="text" required placeholder="Nombre y apellido">
+            <br><br>
+            <input type="email" required placeholder="Ingresa tu e-mail">
+            <br><br>
+            <p>Que tipo de sesión te interesa??</p>
+            <br>
+            <input type="radio">
+                <label for="">Recién nacidos</label>
+            <input type="radio">
+                <label for="">Maternidad</label>
+            <input type="radio">
+                <label for="">Primer año</label>
+            <input type="radio">
+                <label for="">Familiares</label>
+            <br><br>
+            <textarea name="Comentarios" id="Comentarios" cols="50" rows="5" placeholder="Comentarios"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <br><br>
+        </fieldset>
+        </form>
+        </section>
+        <section class="celeste">
+            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://about.instagram.com/es-la"><i class="fa-brands fa-instagram"></i></a>
+            <p><strong>lilmonkeyfotografia@mail.com </strong></p>
+        </section>
+    </footer>
+</body>
+</html>
