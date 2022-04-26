@@ -32,7 +32,6 @@
     width: 100%;
     padding: none;
 }
-
 /*Texto "Sobre mi"*/
 article{
     color: white;
@@ -64,13 +63,13 @@ body{
 }
 
 /*Galería inicio, con fotos circulares*/
-#Galería{
+#Galeria{
     background-color: rgb(195, 28, 89);
     color: white;
     padding: 5px;
     margin-bottom: 50px;
 }
-.galeríaCircular{
+.galeriaCircular{
     display: grid;
     width: 100%;
     height: 900px;
@@ -83,6 +82,10 @@ body{
     border-radius: 100%;
     height: 370px;
     width: 370px;
+    transition: transform 1s;
+}
+.fotoCircularGaleria:hover{
+    transform: scale(1.1);
 }
 .FotoPA{
     grid-column: 1/2;
@@ -180,7 +183,10 @@ body{
     box-shadow: 0 0 15px rgb(41, 20, 0);
     color: rgba(0, 0, 0, 0) ;
 }
-
+.galeriaImg:hover{
+    transform: scale(1.05);
+    transition-duration: 2s;
+}
 /*Galeria de fotos de Recién Nacidos*/
 .Rn1{
     background-image: url(../Imagenes/Rn-H\ \(16\).jpg);
@@ -323,7 +329,7 @@ h3{
         padding-bottom: 35px;
         font-size: 3hv;
     }
-    .galeríaCircular{
+    .galeriaCircular{
         display: grid;
         width: 100%;
         grid-template-columns: 1fr;
