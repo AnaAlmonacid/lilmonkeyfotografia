@@ -27,6 +27,9 @@
     width: 100%;
     padding-bottom: 2px;
 }
+.PA{
+    width: 30%;
+}
 /*Texto "Sobre mi"*/
 article{
     color: white;
@@ -113,7 +116,20 @@ body{
 .celeste p{
     font-size: 18px;
 }
-
+.body{
+    background-color: rgb(105, 51, 5);
+}
+.encabezado{
+    background-color: rgb(105, 51, 5);
+}
+.navbar{
+    background-color: rgb(183, 222, 230);
+    color: black;
+    padding: 15px;
+}
+.row{
+    background-color: rgb(105, 51, 5)
+}
 /*GALERIAS DE IMAGENES*/
 .tituloGaleria{
     text-align: center;
