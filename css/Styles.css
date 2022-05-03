@@ -9,16 +9,11 @@
 
 /*Encabezado*/
 #Logo{
-    width: 20%;
-    padding-top: 1px;
-    padding-bottom: 0px;
-    z-index: 2;
-    position: relative;
-    top: 64px;
+    translate: 500px;
     border-radius: 100%;
 }
-.encabezadoBarra{
-    background-color: rgb(183, 222, 230);
+.navbar{
+    background-color: #b7dee6;
     font-style: normal;
     font-size: 19px;
     list-style-type: none;
@@ -30,7 +25,7 @@
 }
 .encabezadoFotoPrincipal{
     width: 100%;
-    padding: none;
+    padding-bottom: 2px;
 }
 /*Texto "Sobre mi"*/
 article{
@@ -66,46 +61,19 @@ body{
 #Galeria{
     background-color: rgb(195, 28, 89);
     color: white;
-    padding: 5px;
+    padding: 7px;
     margin-bottom: 50px;
 }
 .galeriaCircular{
-    display: grid;
-    width: 100%;
-    height: 900px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 30px;
-    align-items: center;
 }
 .fotoCircularGaleria{
     border-radius: 100%;
-    height: 370px;
-    width: 370px;
     transition: transform 1s;
 }
 .fotoCircularGaleria:hover{
     transform: scale(1.1);
-}
-.FotoPA{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-left: 180px;
-}
-.FotoRN{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-right: 180px;
-}
-.FotoF{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-right: 180px;
-}
-.FotoM{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin-left: 180px;
 }
 .formulario{
     max-width: 60%;
@@ -113,6 +81,9 @@ body{
     margin-bottom: 50px;
     background-color: rgb(183, 222, 230);
     color: rgb(0, 0, 0);
+}
+#contacto{
+    background-color: rgb(105, 51, 5);;
 }
 .contacto{
     background-color: rgb(195, 28, 89);
@@ -122,15 +93,16 @@ body{
     max-width: 60%;
     margin: 0 auto;
     margin-top: 70px;
+    text-align: center;
 }
-
 /*Formato del footer*/
 .celeste{ 
     background-color: rgb(183, 222, 230);
-    padding: 25px;
+    padding: 20px;
     line-height: 33px;
     font-size: 40px;
     color: rgb(195, 28, 89);
+    text-align: center;
 }
 .celeste a:hover{
     color:rgb(105, 51, 5);
@@ -293,204 +265,26 @@ h3{
     font-size: 25px;
     font-weight: 900;
 }
-
-/*Galería inicio, con fotos circulares responsive para celular*/
-@media only screen and (max-width: 600px){
-    /*Encabezado*/
-    #Logo{
-        width: 25%;
-        position:relative;
-        border-radius: 100%;
-        top:-1px;
-        margin-top: 10px;
-    }
-    .encabezadoBarra{
-        background-color: rgb(183, 222, 230);
-        font-style: normal;
-        font-size: 3hv;
-        list-style-type: none;
-        display: flex;
-        padding: 20px;
-        justify-content: space-around;
-        margin-top: 5px;
-    }
-    .encabezadoFotoPrincipal{
-        width: 100%;
-        padding: none;
-    }
-    /*Texto "Sobre mi"*/
-    article{
-        color: white;
-        width: 90%;
-        margin: 0 auto;
-        word-spacing: 1.5px;
-        line-height: 1.5;
-        padding-top: 25px;
-        padding-bottom: 35px;
-        font-size: 3hv;
-    }
-    .galeriaCircular{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr;
-        row-gap: 30px;
-        align-items: center;
-    }
-    .fotoCircularGaleria{
-        border-radius: 100%;
-        height: 300px;
-        width: 300px;
-    }
-    .FotoPA{
-        grid-row: 1/2;
-    }
-    .FotoRN{
-        grid-row: 2/3;
-    }
-    .FotoF{
-        grid-row: 3/4;
-    }
-    .FotoM{
-        grid-row: 4/5;
-    }
-    /*Formulario*/
-    .formulario{
-        max-width: 95%;
-        margin: 0 auto;
-        margin-bottom: 17px;
-        background-color: rgb(183, 222, 230);
-        color: rgb(0, 0, 0);
-    }
-    .contacto{
-        background-color: rgb(195, 28, 89);
-        color: white;
-        padding: 7px;
-        font-weight: bold;
-        max-width: 95%;
-        bottom: 20px;
-        margin-top: 450px;
-    }
-    
-    /*Formato del footer*/
-    .celeste{ 
-        background-color: rgb(183, 222, 230);
-        padding: 25px;
-        line-height: 33px;
-        font-size: 40px;
-        color: rgb(195, 28, 89);
-    }
-    .celeste a:hover{
-        color:rgb(105, 51, 5);
-    }
-    .celeste a{
-        color: rgb(195, 28, 89)
-    }
-    .celeste p{
-        font-size: 18px;
-    }
-    /*Galerias de Fotos*/
-    .tituloGaleria{
-        text-align: center;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        padding: 15px;
-        background-color: rgb(195, 28, 89);
-        font-size: 20px;
-    }
-    .inicioGaleria{
-        color: rgba(240, 248, 255, 0);
-        background-color: rgba(240, 248, 255, 0);
-    }
-    .textoGaleria{
-        text-align: left;
-        width: 90%;
-    }
+@media only screen and (max-width : 960px) {
+        /*Galerias de Fotos*/
     .galeriaFotos{
-        height: 5000px;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 5px;
+        height: 2200px;
+        width: 100%;
+        padding: 15px;
+        gap: 20px;
     }
     .galeriaImg{
         border-radius: 7px;
-        box-shadow: 0 0 3px rgb(41, 20, 0);
+        box-shadow: 0 0 15px rgb(41, 20, 0);
         color: rgba(0, 0, 0, 0) ;
-        width: 500px;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
     }
-    /*Galeria de fotos de Recién Nacidos*/
+    .galeriaImg:hover{
+        transform: scale(1.05);
+        transition-duration: 2s;
+    }
     .Rn1{
         background-image: url(../Imagenes/Rn-H\ \(16\).jpg);
         background-size: cover;
         background-position: center;
-        grid-row: 1/2;
     }
-    .Rn2{
-        background-image: url(../Imagenes/Rn-H\ \(3\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 2/3;
     }
-    .Rn3{
-        background-image: url(../Imagenes/Rn-V\ \(1\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 3/4;
-    }
-    .Rn4{
-        background-image: url(../Imagenes/Rn-H\ \(17\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 4/5;
-    }
-    .Rn5{
-        background-image: url(../Imagenes/Rn-H\ \(7\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 5/6;
-    }
-    .Rn6{
-        background-image: url(../Imagenes/Rn-H\ \(16\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 6/7;
-    }
-    .Rn7{
-        background-image: url(../Imagenes/Rn-H\ \(8\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 7/8;
-    }
-    .Rn8{
-        background-image: url(../Imagenes/Rn-H\ \(1\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 8/9;
-    }
-    .Rn9{
-        background-image: url(../Imagenes/Rn-H\ \(19\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 9/10;
-    }
-    .Rn10{
-        background-image: url(../Imagenes/Rn-H\ \(23\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 10/11;
-    }
-    .Rn11{
-        background-image: url(../Imagenes/Rn-V\ \(6\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 11/12;
-    }
-    .Rn12{
-        background-image: url(../Imagenes/Rn-H\ \(15\).jpg);
-        background-size: cover;
-        background-position: center;
-        grid-row: 12/13;
-    }
-}
