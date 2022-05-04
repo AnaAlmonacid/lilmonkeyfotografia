@@ -151,11 +151,8 @@ body{
     display: flex;
 }
 .textoGaleria{
-    text-align: left;
-    margin-left: 50px;
-    width: fit-content;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: rgb(105, 51, 5);
+    color: white
 }
 
 /*Galerias de Fotos*/
