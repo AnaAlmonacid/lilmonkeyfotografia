@@ -131,6 +131,12 @@ body{
     background-color: rgb(105, 51, 5)
 }
 /*GALERIAS DE IMAGENES*/
+.headerGalerias{
+    background-color: rgb(105, 51, 5);
+    align-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+}
 .tituloGaleria{
     text-align: center;
     font-weight: bold;
@@ -261,14 +267,6 @@ h3{
     font-style: italic;
     color: rgb(183, 222, 230);
     margin-left: -10px;
-}
-#LogoPaginas{
-    width: 20%;
-    padding-top: 1px;
-    padding-bottom: 0px;
-    z-index: 22;
-    position: relative;
-    top: 22px;
 }
 .celesteGalerias{
     padding: 15px;
