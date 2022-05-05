@@ -9,8 +9,10 @@
 
 /*Encabezado*/
 #Logo{
-    translate: 500px;
     border-radius: 100%;
+}
+#LogoPaginas{
+    width: 20%;
 }
 .navbar{
     background-color: #b7dee6;
@@ -95,7 +97,6 @@ body{
     font-weight: bold;
     max-width: 60%;
     margin: 0 auto;
-    margin-top: 70px;
     text-align: center;
 }
 /*Formato del footer*/
@@ -129,6 +130,10 @@ body{
 }
 .row{
     background-color: rgb(105, 51, 5)
+}
+/*PAGINA DE INFORMACION SOBRE LA SESIÓN*/
+.infoSesion{
+    line-height:2em;
 }
 /*GALERIAS DE IMAGENES*/
 .headerGalerias{
@@ -177,6 +182,12 @@ body{
 .galeriaImg:hover{
     transform: scale(1.05);
     transition-duration: 2s;
+}
+.Mat{
+    width: 500px;
+}
+.Fliares{
+    width: 600px;
 }
 /*Galeria de fotos de Recién Nacidos*/
 .Rn1{
@@ -270,7 +281,6 @@ h3{
 }
 .celesteGalerias{
     padding: 15px;
-    margin-top: 25px; 
 }
 .tituloFooter{
     font-size: 25px;

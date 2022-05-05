@@ -14,32 +14,38 @@
 </head>
 <body>
     <!--La idea general de esta pagina es que sea solo una galería, en el caso de querer ir a otra pagina se vuelve al inicio-->
-    <header>
-        <a href="../index.html"><img src="../Imagenes/Icono.png" alt="Logo" id="LogoPaginas"></a>
-        <a class="inicioGaleria" href="../index.html">Inicio</a>
-        <h2 class="tituloGaleria">Galería de fotografías de Maternidad</h2>
-        <br>
+    <header class="container-fluid row d-flex">
+        <a href="../index.html" ><img src="../Imagenes/Iconov.png" alt="Logo" id="LogoPaginas" class="w-100"></a>
+        <h2 class="col-12 tituloGaleria">Galería de fotografías de Maternidad</h2>
     </header>
     <main>
-        <article class="textoGaleria"> <!--Texto de presentación de la categoría-->
-            <p>Fotografias familiares, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quod quo provident aliquam quibusdam repellendus officia debitis minima, est ex deserunt suscipit necessitatibus unde recusandae rerum nisi nostrum corrupti asperiores?</p>
-        </article>
-        <section><!--Ejemplo de galería de fotografías-->
-            <img class="galeriaFotoMaternidad" src="../Imagenes/Maternidad.jpg" alt="Ejemplo1">
-            <img class="galeriaFotoMaternidad" src="../Imagenes/Maternidad.jpg" alt="Ejemplo2">
-            <img class="galeriaFotoMaternidad" src="../Imagenes/Maternidad.jpg" alt="Ejemplo3"><br>
-            <img class="galeriaFotoMaternidad" src="../Imagenes/Maternidad.jpg" alt="Ejemplo4">
-            <img class="galeriaFotoMaternidad" src="../Imagenes/Maternidad.jpg" alt="Ejemplo5"><br>
-            <img class="galeriaFotoMaternidad" src="../Imagenes/Maternidad.jpg" alt="Ejemplo6">
-            <img class="galeriaFotoMaternidad" src="../Imagenes/Maternidad.jpg" alt="Ejemplo7">
-            <img class="galeriaFotoMaternidad" src="../Imagenes/Maternidad.jpg" alt="Ejemplo8">
-        </section>
+            <!--Texto de presentación de la categoría-->
+        <div class="container-fluid row d-flex">
+            <article class="textoGaleria col-11 justify-content-center"> 
+                <p>Fotografias de maternidad, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quod quo provident aliquam quibusdam repellendus officia debitis minima, est ex deserunt suscipit necessitatibus unde recusandae rerum nisi nostrum corrupti asperiores?</p>
+            </article>
+        </div>
+        <!--Galería-->
+        <section class="row container-fluid"><!--Ejemplo de galería de fotografías-->
+                <img class="col-5 col-m-12 Mat" src="../Imagenes/Maternidad.jpg" alt="Ejemplo1">
+                <img class="col-5 col-m-12 Mat" src="../Imagenes/Maternidad.jpg" alt="Ejemplo1">
+                <img class="col-5 col-m-12 Mat" src="../Imagenes/Maternidad.jpg" alt="Ejemplo3">
+                <img class="col-5 col-m-12 Mat" src="../Imagenes/Maternidad.jpg" alt="Ejemplo4">
+                <img class="col-5 col-m-12 Mat" src="../Imagenes/Maternidad.jpg" alt="Ejemplo5">
+                <img class="col-5 col-m-12 Mat" src="../Imagenes/Maternidad.jpg" alt="Ejemplo6">
+                <img class="col-5 col-m-12 Mat" src="../Imagenes/Maternidad.jpg" alt="Ejemplo7">
+                <img class="col-5 col-m-12 Mat" src="../Imagenes/Maternidad.jpg" alt="Ejemplo8">
+            </section>
     </main>
+        <!--Footer-->
     <footer class="celeste celesteGalerias">
         <h2 class="tituloFooter">Contacto</h2>
         <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
         <a href="https://about.instagram.com/es-la"><i class="fa-brands fa-instagram"></i></a>
         <p><strong>lilmonkeyfotografia@mail.com </strong></p>
     </footer>
+    <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

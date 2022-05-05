@@ -5,41 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotografías familiares</title>
-        <link rel="shortcut icon" href="../Imagenes/Icono.png" type="image/x-icon">
-        <link rel="stylesheet" href="../css/Styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../Imagenes/Icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!--La idea general de esta pagina es que sea solo una galería, en el caso de querer ir a otra pagina se vuelve al inicio-->
-    <header>
-        <a href="../index.html"><img src="../Imagenes/Icono.png" alt="Logo" id="LogoPaginas"></a>
-        <a class="inicioGaleria" href="../index.html">Inicio</a>
-        <h2 class="tituloGaleria">Galería de fotografías familiares</h2>
-        <br>
-    </header>
-    <main>
-        <article class="textoGaleria"> <!--Texto de presentación de la categoría-->
+<!--La idea general de esta pagina es que sea solo una galería, en el caso de querer ir a otra pagina se vuelve al inicio-->
+<header class="container-fluid row d-flex">
+    <a href="../index.html" ><img src="../Imagenes/Iconov.png" alt="Logo" id="LogoPaginas" class="w-100"></a>
+    <h2 class="col-12 tituloGaleria">Galería de fotografías familiares</h2>
+</header>
+<main>
+        <!--Texto de presentación de la categoría-->
+    <div class="container-fluid row d-flex">
+        <article class="textoGaleria col-11 justify-content-center"> 
             <p>Fotografias familiares, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quod quo provident aliquam quibusdam repellendus officia debitis minima, est ex deserunt suscipit necessitatibus unde recusandae rerum nisi nostrum corrupti asperiores?</p>
         </article>
-        <section><!--Galería de Fotografías Familiares-->
-            <img class="galeriaFoto" src="../Imagenes/familiares.jpg" alt="Ejemplo1">
-            <img class="galeriaFoto" src="../Imagenes/familiares.jpg" alt="Ejemplo2">
-            <img class="galeriaFoto" src="../Imagenes/familiares.jpg" alt="Ejemplo3">
-            <img class="galeriaFoto" src="../Imagenes/familiares.jpg" alt="Ejemplo4">
-            <img class="galeriaFoto" src="../Imagenes/familiares.jpg" alt="Ejemplo5">
-            <img class="galeriaFoto" src="../Imagenes/familiares.jpg" alt="Ejemplo6">
-            <img class="galeriaFoto" src="../Imagenes/familiares.jpg" alt="Ejemplo7">
-            <img class="galeriaFoto" src="../Imagenes/familiares.jpg" alt="Ejemplo8">
+    </div>
+    <!--Galería-->
+    <section class="row container-fluid"><!--Ejemplo de galería de fotografías-->
+            <img class="col-5 col-m-12 Fliares" src="../Imagenes/familiares.jpg" alt="Ejemplo1">
+            <img class="col-5 col-m-12 Fliares" src="../Imagenes/familiares.jpg" alt="Ejemplo1">
+            <img class="col-5 col-m-12 Fliares" src="../Imagenes/familiares.jpg" alt="Ejemplo3">
+            <img class="col-5 col-m-12 Fliares" src="../Imagenes/familiares.jpg" alt="Ejemplo4">
+            <img class="col-5 col-m-12 Fliares" src="../Imagenes/familiares.jpg" alt="Ejemplo5">
+            <img class="col-5 col-m-12 Fliares" src="../Imagenes/familiares.jpg" alt="Ejemplo6">
+            <img class="col-5 col-m-12 Fliares" src="../Imagenes/familiares.jpg" alt="Ejemplo7">
+            <img class="col-5 col-m-12 Fliares" src="../Imagenes/familiares.jpg" alt="Ejemplo8">
         </section>
-    </main>
-    <footer class="celeste celesteGalerias">
-        <h2 class="tituloFooter">Contacto</h2>
-        <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://about.instagram.com/es-la"><i class="fa-brands fa-instagram"></i></a>
-        <p><strong>lilmonkeyfotografia@mail.com</strong></p>
-    </footer>
+</main>
+<!--Footer-->
+<footer class="celeste celesteGalerias">
+    <h2 class="tituloFooter">Contacto</h2>
+    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://about.instagram.com/es-la"><i class="fa-brands fa-instagram"></i></a>
+    <p><strong>lilmonkeyfotografia@mail.com </strong></p>
+</footer>
+<!--script-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
