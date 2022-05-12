@@ -15,7 +15,7 @@ body
     border-radius: 100%
 
 #LogoPaginas 
-    width: 20%
+    @mixin size    
 
 .navbar 
     background-color: #b7dee6
@@ -308,3 +308,22 @@ h3
         background-image: url(../Imagenes/Rn-H\ \(16\).jpg)
         background-size: cover
         background-position: center
+$paleta:#dfffc1, #fffbc1, #e1c1ff
+
+@each $color in $paleta
+    .map--#{$paleta}
+        color: $paleta
+
+.DatosInteresantes
+    color: pink
+    size: 30px
+    text-align: left 
+
+.Locacion
+    @extend .DatosInteresantes
+
+.otro
+    @extend .DatosInteresantes
+
+@mixin size
+        width: 20%

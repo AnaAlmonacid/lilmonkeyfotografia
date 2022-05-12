@@ -13,10 +13,6 @@ body {
   border-radius: 100%;
 }
 
-#LogoPaginas {
-  width: 20%;
-}
-
 .navbar {
   background-color: #b7dee6;
   font-style: normal;
@@ -355,6 +351,24 @@ h3 {
   background-image: url(../Imagenes/Rn-H\ \(16\).jpg);
   background-size: cover;
   background-position: center;
+}
+
+.map--#dfffc1, #fffbc1, #e1c1ff {
+  color: #dfffc1, #fffbc1, #e1c1ff;
+}
+
+.map--#dfffc1, #fffbc1, #e1c1ff {
+  color: #dfffc1, #fffbc1, #e1c1ff;
+}
+
+.map--#dfffc1, #fffbc1, #e1c1ff {
+  color: #dfffc1, #fffbc1, #e1c1ff;
+}
+
+.DatosInteresantes, .otro, .Locacion {
+  color: pink;
+  size: 30px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=Styles.css.map */
