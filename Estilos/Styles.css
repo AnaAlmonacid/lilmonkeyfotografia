@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Reseteo*/
 body {
   margin: 0;
   padding: 0;
@@ -111,6 +112,7 @@ body {
   max-width: 60%;
   margin: 0 auto;
   text-align: center;
+  margin-top: 70px;
 }
 
 /*Formato del footer*/
@@ -332,31 +334,27 @@ h3 {
   font-weight: 900;
 }
 
-@media only screen and (max-width: 960px) {
-  /*Galerias de Fotos*/
-  .galeriaFotos {
-    height: 2200px;
-    width: 100%;
-    padding: 15px;
-    gap: 20px;
-  }
+/*Galerias de Fotos*/
+.galeriaFotos {
+  height: 2200px;
+  width: 100%;
+  padding: 15px;
+  gap: 20px;
+}
 
-  .galeriaImg {
-    border-radius: 7px;
-    box-shadow: 0 0 15px rgb(41, 20, 0);
-    color: rgba(0, 0, 0, 0);
-  }
-
-  .galeriaImg:hover {
-    transform: scale(1.05);
-    transition-duration: 2s;
-  }
-
-  .Rn1 {
-    background-image: url(../Imagenes/Rn-H\ \(16\).jpg);
-    background-size: cover;
-    background-position: center;
-  }
+.galeriaImg {
+  border-radius: 7px;
+  box-shadow: 0 0 15px rgb(41, 20, 0);
+  color: rgba(0, 0, 0, 0);
+}
+.galeriaImg .galeriaImg:hover {
+  transform: scale(1.05);
+  transition-duration: 2s;
+}
+.galeriaImg .Rn1 {
+  background-image: url(../Imagenes/Rn-H\ \(16\).jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=Styles.css.map */
