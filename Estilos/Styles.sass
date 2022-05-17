@@ -1,6 +1,6 @@
-$colorf: rgb(195, 28, 89)
-$colorm: rgb(105, 51, 5)
-$colorc: rgb(183, 222, 230)
+$colorf: rgb(179, 26, 82)
+$colorm: rgb(63, 31, 1)
+$colorc: rgb(178, 217, 224)
 /*Reseteo*/
 body 
     margin: 0
@@ -18,9 +18,9 @@ body
     @mixin size    
 
 .navbar 
-    background-color: #b7dee6
+    background-color: $colorc
     font-style: normal
-    font-size: 19px
+    font-size: 20px
     list-style-type: none
     display: flex
     padding: 20px
@@ -38,12 +38,13 @@ body
 /*Texto "Sobre mi"*/
 article 
     color: white
-    width: 70%
+    width: 80%
     margin: 0 auto
     word-spacing: 1.5px
     line-height: 1.5
-    padding-top: 25px
-    padding-bottom: 35px
+    padding-top: 40px
+    padding-bottom: 40px
+    font-size: 3.5vh
 
 li a  
     text-decoration: none
@@ -53,7 +54,7 @@ a:hover
 
 /*Formato de la main page*/
 body 
-    background-color: rgb(105, 51, 5)
+    background-color: rgb(63, 31, 1)
     font-family: sans-serif
     font-size: 18px
     letter-spacing: 0px
@@ -65,12 +66,12 @@ body
 
 /*Galería inicio, con fotos circulares*/
 #Galeria 
-    background-color: rgb(195, 28, 89)
+    background-color: rgb(179, 26, 82)
     color: white
     padding: 7px
     margin-bottom: 50px
 
-.galeriaCircular 
+.galeriaCircular
     grid-template-columns: 1fr 1fr
     grid-template-rows: 1fr 1fr
 
@@ -85,14 +86,14 @@ body
     max-width: 60%
     margin: 0 auto
     margin-bottom: 50px
-    background-color: rgb(183, 222, 230)
+    background-color: rgb(178, 217, 224)
     color: rgb(0, 0, 0)
 
 #contacto 
-    background-color: rgb(105, 51, 5)
+    background-color: rgb(63, 31, 1)
 
 .contacto 
-    background-color: rgb(195, 28, 89)
+    background-color: rgb(179, 26, 82)
     color: white
     padding: 7px
     font-weight: bold
@@ -103,43 +104,44 @@ body
 
 /*Formato del footer*/
 .celeste  
-    background-color: rgb(183, 222, 230)
+    background-color: rgb(178, 217, 224)
     padding: 20px
     line-height: 33px
     font-size: 40px
-    color: rgb(195, 28, 89)
+    color: rgb(179, 26, 82)
     text-align: center
 
 .celeste a:hover 
-    color: rgb(105, 51, 5)
+    color: rgb(63, 31, 1)
 
 .celeste a 
-    color: rgb(195, 28, 89)
+    color: rgb(179, 26, 82)
 
 .celeste p 
     font-size: 18px
 
 .body 
-    background-color: rgb(105, 51, 5)
+    background-color: rgb(63, 31, 1)
 
 .encabezado 
-    background-color: rgb(105, 51, 5)
+    background-color: rgb(63, 31, 1)
 
 .navbar 
-    background-color: rgb(183, 222, 230)
+    background-color: rgb(178, 217, 224)
     color: black
     padding: 15px
 
 .row 
-    background-color: rgb(105, 51, 5)
+    background-color: rgb(63, 31, 1)
 
 /*PAGINA DE INFORMACION SOBRE LA SESIÓN*/
 .infoSesion 
     line-height:2em
 
 /*GALERIAS DE IMAGENES*/
+
 .headerGalerias 
-    background-color: rgb(105, 51, 5)
+    background-color: rgb(63, 31, 1)
     align-content: center
     align-items: center
     margin-bottom: 0%
@@ -149,11 +151,11 @@ body
     font-weight: bold
     color: rgb(255, 255, 255)
     padding: 15px
-    background-color: rgb(195, 28, 89)
+    background-color: rgb(179, 26, 82)
 
 .inicioGaleria 
     background-color: white 
-    color: rgb(195, 28, 89)
+    color: rgb(179, 26, 82)
     padding: 20px
     padding-left: 33px
     padding-right: 33px
@@ -164,7 +166,7 @@ body
     display: flex
 
 .textoGaleria 
-    background-color: rgb(105, 51, 5)
+    background-color: rgb(63, 31, 1)
     color: white
 
 /*Galerias de Fotos*/
@@ -277,7 +279,7 @@ body
 
 h3 
     font-style: italic
-    color: rgb(183, 222, 230)
+    color: rgb(178, 217, 224)
     margin-left: -10px
 
 .celesteGalerias 
@@ -308,22 +310,3 @@ h3
         background-image: url(../Imagenes/Rn-H\ \(16\).jpg)
         background-size: cover
         background-position: center
-$paleta:#dfffc1, #fffbc1, #e1c1ff
-
-@each $color in $paleta
-    .map--#{$paleta}
-        color: $paleta
-
-.DatosInteresantes
-    color: pink
-    size: 30px
-    text-align: left 
-
-.Locacion
-    @extend .DatosInteresantes
-
-.otro
-    @extend .DatosInteresantes
-
-@mixin size
-        width: 20%
