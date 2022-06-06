@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+$colorc: rgb(181, 205, 209);
+$colorm: rgb(63, 31, 1); 
+$colorf: rgb(179, 26, 82);
+
+/*Reseteo*/
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    background-color: $colorm;
+}
+
+/*INDEX Y ESTILO GENERALIZADO DE LAS PAGINAS*/
+
+/*Encabezado*/
+
+#Logo {
+    border-radius: 100%;
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    #Logo {
+        border-radius: 100%;
+        width: 35%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+.encabezado {
+    background-color: $colorm;
+}
+
+.navbar {
+    background-color: $colorc;
+    color: black;
+    padding: 15px;
+}
+
+.nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 3vh;
+    height: 30px;
+}
+
+.nav-item a:hover {
+    color: $colorf;
+}
+
+#navbarDropdownMenuLink {
+    position: relative;
+    top: -25%;
+    color: $colorm;
+}
+
+.dropdown-item {
+    background-color: white;
+    border: $colorc;
+    color: $colorf;
+}
+
+/*Formato de la main page*/
+body {
+    background-color: $colorm;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Raleway", sans-serif;
+    overflow: auto;
+}
+
+.row {
+    background-color: $colorm;
+}
+
+.encabezadoFotoPrincipal {
+    width: 100%;
+    padding-bottom: 2px;
+}
+
+.Lema {
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Fotos circulares, que llevan a cada una de las páginas de las distintas galerías*/
+#Galeria {
+    background-color: $colorf;
+    color: white;
+    padding: 7px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.fotoCircularGaleria {
+    border-radius: 100%;
+    transition: transform 1s;
+    width: 70%;
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+    .fotoCircularGaleria {
+        border-radius: 100%;
+        transition: transform 1s;
+        width: 101%;
+        padding-bottom: 30px;
+    }
+}
+
+.fotoCircularGaleria:hover {
+    transform: scale(1.1);
+}
+
+/*Formulario de contacto*/
+.formulario {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: $colorc;
+    color: rgb(0, 0, 0);
+}
+
+#contacto {
+    background-color: $colorm;
+    font-size: 20px;
+}
+
+.contacto {
+    background-color: $colorf;
+    font-size: 25px;
+    color: white;
+    padding: 7px;
+    font-weight: bold;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.botonInfo {
+    margin: 25px;
+}
+
+/*Formato del footer*/
+.celeste {
+    background-color: $colorc;
+    padding: 20px;
+    line-height: 33px;
+    font-size: 40px;
+    color:  $colorf;
+    text-align: center;
+}
+
+.celeste a:hover {
+    color: $colorm;
+}
+
+.celeste a {
+    color: $colorf;
+    padding: 7px;
+}
+
+.celeste p {
+    font-size: 18px;
+}
+
+/*DISEÑO PAGINAS DE GALERIAS DE IMAGENES*/
+#LogoPaginas {
+    border-radius: 100%;
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+    #LogoPaginas {
+        border-radius: 100%;
+        width: 60%;
+        padding-top: 10px;
+        padding-bottom: 2px;
+    }
+}
+
+.tituloGaleria {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    background-color: $colorf;
+    font-size: 25px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .tituloGaleria {
+        text-align: center;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        padding: 12px;
+        background-color: $colorf;
+        font-size: 20px;
+    }
+}
+
+.textoGaleria {
+    background-color: $colorm;
+    color: white;
+    margin: 50px;
+    font-size: 20px;
+}
+
+.celesteGalerias {
+    padding: 3px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.tituloFooter {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+/*Galerias de Fotos*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+    grid-gap: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 1em;
+    }
+}
+
+.Galerías {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgb(41, 20, 0);
+    color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (min-width: 1200px) {
+    .Galerías:hover {
+        transform: scale(1.05);
+        transition-duration: 2s;
+    }
+}
+
+.galeriaFotosRN {
+    height: 2200px;
+    width: 100%;
+    display: grid;
+    padding: 25px;
+    gap: 20px;
+}
+
+/*Página de Información sobre la sesión*/
+.infoSesion {
+    h2{
+        font-size: (25px);
+        font-weight: bold;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    h3{
+        font-size: (18px);
+        font-weight: bold;
+        color: $colorc;
+        line-height: 1em;
+        padding-top: 20px;
+    }
+    p{
+        font-size: (18px);
+        font-style: italic;
+    }
+}
+
+
+/*# sourceMappingURL=Styles.css.map */

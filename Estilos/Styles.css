@@ -1,17 +1,15 @@
 @charset "UTF-8";
 /*Reseteo*/
-.body {
+body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  background-color: rgb(63, 31, 1)
+  background-color: rgb(63, 31, 1);
 }
 
 /*INDEX Y ESTILO GENERALIZADO DE LAS PAGINAS*/
-
 /*Encabezado*/
-
 #Logo {
   border-radius: 100%;
   width: 20%;
@@ -27,7 +25,6 @@
     padding-bottom: 10px;
   }
 }
-
 .encabezado {
   background-color: rgb(63, 31, 1);
 }
@@ -38,23 +35,24 @@
   padding: 15px;
 }
 
-.nav-item{
+.nav-item {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 3vh;
   height: 30px;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
   color: rgb(179, 26, 82);
 }
-#navbarDropdownMenuLink{
+
+#navbarDropdownMenuLink {
   position: relative;
   top: -25%;
-  color: rgb(105, 51, 5);
+  color: rgb(63, 31, 1);
 }
 
-.dropdown-item{
+.dropdown-item {
   background-color: white;
   border: rgb(181, 205, 209);
   color: rgb(179, 26, 82);
@@ -82,7 +80,7 @@ body {
   padding-bottom: 2px;
 }
 
-.Lema{
+.Lema {
   padding: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -112,7 +110,6 @@ body {
     padding-bottom: 30px;
   }
 }
-
 .fotoCircularGaleria:hover {
   transform: scale(1.1);
 }
@@ -170,13 +167,8 @@ body {
   font-size: 18px;
 }
 
-/*PAGINA DE INFORMACION SOBRE LA SESIÓN*/
-.infoSesion {
-  line-height: 2em;
-}
-
 /*DISEÑO PAGINAS DE GALERIAS DE IMAGENES*/
-#LogoPaginas{
+#LogoPaginas {
   border-radius: 100%;
   width: 20%;
   padding-top: 10px;
@@ -191,7 +183,6 @@ body {
     padding-bottom: 2px;
   }
 }
-
 .tituloGaleria {
   text-align: center;
   font-weight: bold;
@@ -213,7 +204,6 @@ body {
     font-size: 20px;
   }
 }
-
 .textoGaleria {
   background-color: rgb(63, 31, 1);
   color: white;
@@ -236,21 +226,19 @@ body {
 }
 
 /*Galerias de Fotos*/
-
 .grid-container {
-  display: grid ;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
   grid-gap: 1em;
 }
 
 @media screen and (max-width: 1200px) {
   .grid-container {
-    display: grid ;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 1em;
   }
 }
-
 .Galerías {
   width: 100%;
   height: auto;
@@ -265,7 +253,6 @@ body {
     transition-duration: 2s;
   }
 }
-
 .galeriaFotosRN {
   height: 2200px;
   width: 100%;
@@ -273,5 +260,28 @@ body {
   padding: 25px;
   gap: 20px;
 }
+
+/*Página de Información sobre la sesión*/
+.infoSesion h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+.infoSesion h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(181, 205, 209);
+  line-height: 1em;
+  padding-top: 20px;
+}
+.infoSesion p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=Styles.css.map */
 
 /*# sourceMappingURL=Styles.css.map */
