@@ -23,36 +23,54 @@
 <body>
     <!--Encabezado-->
     <header class="encabezado row">
-        <a href="./index.html"><img src="./Imagenes/Icono.png" alt="Logo" id="Logo" class="w-25 justify-content-center"></a>
-            <div class="container-fluid">
-                <ul class="navbar justify-content-evenly">
-                    <li><a href="Pagina/Sobre la sesion.html">Sobre la sesión</a></li>
-                    <li><a href="Pagina/Primer año.html">Fotos Primer Año</a></li>
-                    <li><a href="Pagina/Recien nacidos.html">Fotos Recién Nacidos</a></li>
-                    <li><a href="Pagina/Maternidad.html">Fotos Maternidad</a></li>
-                    <li><a href="Pagina/Familiares.html">Fotos Familiares</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+        <a href="./index.html"><img src="./Imagenes/Icono.png" alt="Logo principal" id="Logo"></a>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b5cdd1;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galerías</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="Pagina/Primer año.html">Fotos Primer Año</a></li>
+                                    <li><a class="dropdown-item" href="Pagina/Recien nacidos.html">Fotos Recién Nacidos</a></li>
+                                    <li><a class="dropdown-item" href="Pagina/Maternidad.html">Fotos Maternidad</a></li>
+                                    <li><a class="dropdown-item" href="Pagina/Familiares.html">Fotos Familiares</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item"><a href="Pagina/Sobre la sesion.html">Sobre la sesión</a></li>
+                        <li class="nav-item"><a href="#contacto">Contacto</a></li>
+                    </ul>
             </div>
+            </div>
+        </nav>
     </header>
     <main class="row">
         <!--Foto principal de inicio-->
-        <img src="./Imagenes/Inicio.jpg" alt="Foto bebe inicio" class="encabezadoFotoPrincipal col-12">
+        <img src="./Imagenes/Inicio.jpg" alt="Foto principal de encabezado" class="encabezadoFotoPrincipal col-12">
         <!--Texto de presentación de ejemplo-->
-        <article class="col-11 justify-content-center">
-            <p>El tiempo pasa volando...</p>
-            <p>Guardá tu historia para siempre...</p>
-            <p>Nosotros capturamos esos recuerdos para vos!</p>
-        </article>
+        <img src="./Imagenes/Lema.png" alt="Frase lema de fotografía" class="Lema col-12 col-lg-6 col-xl-6">
         <!--Galerías-->
         <div class="row d-flex align-items-center justify-content-center">
-        <h2 id="Galeria" class="col-12 text-center">Galerías</h2>
-            <div class="galeriaCircular container-fluid">
+        <h1 id="Galeria" class="col-12 text-center">Galerías</h1>
+            <div class="galeriaCircular container-fluid row ">
                 <!--Cada una me lleva a una galería diferente según el tipo de sesión-->
-                <a class="col-6 col-m-12" href="Pagina/Primer año.html"><img src="./Imagenes/PAño.png" alt="Primeraño" class="fotoCircularGaleria"></a>
-                <a class="col-6 col-m-12" href="Pagina/Recien nacidos.html"><img src="./Imagenes/Rn.png" alt="RecienNacidos" class="fotoCircularGaleria"></a>
-                <a class="col-6 col-m-12" href="Pagina/Maternidad.html"><img src="./Imagenes/Maternidad.png" alt="RecienNacidos" class="fotoCircularGaleria"></a>
-                <a class="col-6 col-m-12" href="Pagina/Familiares.html"><img src="./Imagenes/Flia.png" alt="RecienNacidos" class="fotoCircularGaleria"></a>
+                <div class="col-xs-1 col-lg-3 col-xl-3">
+                    <a href="Pagina/Primer año.html">
+                    <img src="./Imagenes/PAño.png" alt="Foto de presentación galería de primer año" class="fotoCircularGaleria justify-content-center"></a>
+                </div>
+                <div class="col-xs-1 col-lg-3 col-xl-3">
+                    <a href="Pagina/Recien nacidos.html"><img src="./Imagenes/Rn.png" alt="Foto de presentación galería de Recien Nacidos" class="fotoCircularGaleria"></a>
+                </div>
+                <div class="col-xs-1 col-lg-3 col-xl-3">
+                    <a href="Pagina/Maternidad.html"><img src="./Imagenes/Maternidad.png" alt="Foto de presentación galería de Maternidad" class="fotoCircularGaleria"></a>
+                </div>
+                <div class="col-xs-1 col-sm-1 col-md-6 col-lg-3 col-xl-3">
+                    <a href="Pagina/Familiares.html"><img src="./Imagenes/Flia.png" alt="Foto de presentación galería de fotos familiares" class="fotoCircularGaleria"></a>
+                </div>
             </div>
         </div>
     </main>
@@ -74,9 +92,9 @@
             </form>
         </section>
         <section class="celeste">
-            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://about.instagram.com/es-la"><i class="fa-brands fa-instagram"></i></a>
-            <p><strong>lilmonkeyfotografia@mail.com </strong></p>
+            <a href="https://api.whatsapp.com/send?phone=3416061144&text=Hola!! Te comunicaste con lil monkey fotografía, clickeá en Continuar al chat para hacerme tu consulta!!"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/lilmonkeyfotografiafamiliar?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+            <p><strong>lilmonkeyfotografia@gmail.com</strong></p>
         </section>
     </footer>
     <!--Script-->

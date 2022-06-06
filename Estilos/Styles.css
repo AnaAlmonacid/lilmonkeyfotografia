@@ -1,56 +1,62 @@
 @charset "UTF-8";
 /*Reseteo*/
-body {
+.body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  background-color: rgb(63, 31, 1)
 }
 
 /*INDEX Y ESTILO GENERALIZADO DE LAS PAGINAS*/
+
 /*Encabezado*/
+
 #Logo {
   border-radius: 100%;
+  width: 20%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  #Logo {
+    border-radius: 100%;
+    width: 35%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+.encabezado {
+  background-color: rgb(63, 31, 1);
 }
 
 .navbar {
-  background-color: rgb(178, 217, 224);
-  font-style: normal;
-  font-size: 20px;
-  list-style-type: none;
-  display: flex;
-  padding: 20px;
-  justify-content: space-around;
-  margin-top: 5px;
-  z-index: 1;
+  background-color: rgb(181, 205, 209);
+  color: black;
+  padding: 15px;
 }
 
-.encabezadoFotoPrincipal {
-  width: 100%;
-  padding-bottom: 2px;
+.nav-item{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 3vh;
+  height: 30px;
 }
 
-.PA {
-  width: 30%;
+.nav-item a:hover{
+  color: rgb(179, 26, 82);
+}
+#navbarDropdownMenuLink{
+  position: relative;
+  top: -25%;
+  color: rgb(105, 51, 5);
 }
 
-/*Texto "Sobre mi"*/
-article {
-  color: white;
-  width: 80%;
-  margin: 0 auto;
-  word-spacing: 1.5px;
-  line-height: 1.5;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 3.5vh;
-}
-
-li a {
-  text-decoration: none;
-}
-
-a:hover {
+.dropdown-item{
+  background-color: white;
+  border: rgb(181, 205, 209);
   color: rgb(179, 26, 82);
 }
 
@@ -67,42 +73,67 @@ body {
   overflow: auto;
 }
 
-/*Galería inicio, con fotos circulares*/
+.row {
+  background-color: rgb(63, 31, 1);
+}
+
+.encabezadoFotoPrincipal {
+  width: 100%;
+  padding-bottom: 2px;
+}
+
+.Lema{
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Fotos circulares, que llevan a cada una de las páginas de las distintas galerías*/
 #Galeria {
   background-color: rgb(179, 26, 82);
   color: white;
   padding: 7px;
   margin-bottom: 50px;
-}
-
-.galeriaCircular {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  font-size: 30px;
 }
 
 .fotoCircularGaleria {
   border-radius: 100%;
   transition: transform 1s;
+  width: 70%;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .fotoCircularGaleria {
+    border-radius: 100%;
+    transition: transform 1s;
+    width: 101%;
+    padding-bottom: 30px;
+  }
 }
 
 .fotoCircularGaleria:hover {
   transform: scale(1.1);
 }
 
+/*Formulario de contacto*/
 .formulario {
   max-width: 60%;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-color: rgb(178, 217, 224);
+  background-color: rgb(181, 205, 209);
   color: rgb(0, 0, 0);
 }
 
 #contacto {
   background-color: rgb(63, 31, 1);
+  font-size: 20px;
 }
 
 .contacto {
   background-color: rgb(179, 26, 82);
+  font-size: 25px;
   color: white;
   padding: 7px;
   font-weight: bold;
@@ -112,9 +143,13 @@ body {
   margin-top: 70px;
 }
 
+.botonInfo {
+  margin: 25px;
+}
+
 /*Formato del footer*/
 .celeste {
-  background-color: rgb(178, 217, 224);
+  background-color: rgb(181, 205, 209);
   padding: 20px;
   line-height: 33px;
   font-size: 40px;
@@ -128,28 +163,11 @@ body {
 
 .celeste a {
   color: rgb(179, 26, 82);
+  padding: 7px;
 }
 
 .celeste p {
   font-size: 18px;
-}
-
-.body {
-  background-color: rgb(63, 31, 1);
-}
-
-.encabezado {
-  background-color: rgb(63, 31, 1);
-}
-
-.navbar {
-  background-color: rgb(178, 217, 224);
-  color: black;
-  padding: 15px;
-}
-
-.row {
-  background-color: rgb(63, 31, 1);
 }
 
 /*PAGINA DE INFORMACION SOBRE LA SESIÓN*/
@@ -157,201 +175,103 @@ body {
   line-height: 2em;
 }
 
-/*GALERIAS DE IMAGENES*/
-.headerGalerias {
-  background-color: rgb(63, 31, 1);
-  align-content: center;
-  align-items: center;
-  margin-bottom: 0%;
+/*DISEÑO PAGINAS DE GALERIAS DE IMAGENES*/
+#LogoPaginas{
+  border-radius: 100%;
+  width: 20%;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+  #LogoPaginas {
+    border-radius: 100%;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
 }
 
 .tituloGaleria {
   text-align: center;
   font-weight: bold;
   color: rgb(255, 255, 255);
-  padding: 15px;
+  padding: 12px;
   background-color: rgb(179, 26, 82);
+  font-size: 25px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
-.inicioGaleria {
-  background-color: white;
-  color: rgb(179, 26, 82);
-  padding: 20px;
-  padding-left: 33px;
-  padding-right: 33px;
-  font-weight: 500;
-  text-decoration: none;
-  position: absolute;
-  left: 0px;
-  display: flex;
+@media screen and (max-width: 1200px) {
+  .tituloGaleria {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    background-color: rgb(179, 26, 82);
+    font-size: 20px;
+  }
 }
 
 .textoGaleria {
   background-color: rgb(63, 31, 1);
   color: white;
+  margin: 50px;
+  font-size: 20px;
+}
+
+.celesteGalerias {
+  padding: 3px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.tituloFooter {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 3px;
 }
 
 /*Galerias de Fotos*/
-.galeriaFotos {
+
+.grid-container {
+  display: grid ;
+  grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+  grid-gap: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    display: grid ;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1em;
+  }
+}
+
+.Galerías {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  box-shadow: 0 0 15px rgb(41, 20, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (min-width: 1200px) {
+  .Galerías:hover {
+    transform: scale(1.05);
+    transition-duration: 2s;
+  }
+}
+
+.galeriaFotosRN {
   height: 2200px;
   width: 100%;
   display: grid;
   padding: 25px;
   gap: 20px;
-}
-
-.galeriaImg {
-  border-radius: 7px;
-  box-shadow: 0 0 15px rgb(41, 20, 0);
-  color: rgba(0, 0, 0, 0);
-}
-
-.galeriaImg:hover {
-  transform: scale(1.05);
-  transition-duration: 2s;
-}
-
-.Mat {
-  width: 500px;
-}
-
-.Fliares {
-  width: 600px;
-}
-
-/*Galeria de fotos de Recién Nacidos*/
-.Rn1 {
-  background-image: url(../Imagenes/Rn-H\ \(16\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 1/3;
-  grid-row: 1/2;
-}
-
-.Rn2 {
-  background-image: url(../Imagenes/Rn-H\ \(3\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-.Rn3 {
-  background-image: url(../Imagenes/Rn-V\ \(1\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 1/2;
-  grid-row: 2/4;
-}
-
-.Rn4 {
-  background-image: url(../Imagenes/Rn-H\ \(17\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 2/4;
-  grid-row: 2/3;
-}
-
-.Rn5 {
-  background-image: url(../Imagenes/Rn-H\ \(7\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-
-.Rn6 {
-  background-image: url(../Imagenes/Rn-H\ \(16\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
-
-.Rn7 {
-  background-image: url(../Imagenes/Rn-H\ \(8\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 1/3;
-  grid-row: 4/5;
-}
-
-.Rn8 {
-  background-image: url(../Imagenes/Rn-H\ \(1\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 3/4;
-  grid-row: 4/5;
-}
-
-.Rn9 {
-  background-image: url(../Imagenes/Rn-H\ \(19\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 1/2;
-  grid-row: 5/6;
-}
-
-.Rn10 {
-  background-image: url(../Imagenes/Rn-H\ \(23\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 2/3;
-  grid-row: 5/6;
-}
-
-.Rn11 {
-  background-image: url(../Imagenes/Rn-V\ \(6\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 3/4;
-  grid-row: 5/7;
-}
-
-.Rn12 {
-  background-image: url(../Imagenes/Rn-H\ \(15\).jpg);
-  background-size: cover;
-  background-position: center;
-  grid-column: 1/3;
-  grid-row: 6/7;
-}
-
-h3 {
-  font-style: italic;
-  color: rgb(178, 217, 224);
-  margin-left: -10px;
-}
-
-.celesteGalerias {
-  padding: 15px;
-}
-
-.tituloFooter {
-  font-size: 25px;
-  font-weight: 900;
-}
-
-/*Galerias de Fotos*/
-.galeriaFotos {
-  height: 2200px;
-  width: 100%;
-  padding: 15px;
-  gap: 20px;
-}
-
-.galeriaImg {
-  border-radius: 7px;
-  box-shadow: 0 0 15px rgb(41, 20, 0);
-  color: rgba(0, 0, 0, 0);
-}
-.galeriaImg .galeriaImg:hover {
-  transform: scale(1.05);
-  transition-duration: 2s;
-}
-.galeriaImg .Rn1 {
-  background-image: url(../Imagenes/Rn-H\ \(16\).jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 /*# sourceMappingURL=Styles.css.map */
